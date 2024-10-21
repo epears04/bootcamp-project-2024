@@ -83,7 +83,7 @@ html {
 
   /* General CSS */
   body {
-    background-image: url("images/background.jpg");
+    background-image: url("/../resources/background.jpg");
     background-size: cover;
   }
 
