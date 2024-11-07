@@ -1,8 +1,9 @@
 import React from "react";
+
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-5 bg-torq">
-      <h1 className="text-xl font-semibold text-gray-900 no-underline">
+      <h1 className="text-2xl font-semibold text-gray-900 no-underline">
       <a  href="./../../"
             download="ElliePearsonResume.pdf"
             target="_blank"
