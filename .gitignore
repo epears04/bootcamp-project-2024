@@ -1,2 +1,4 @@
 /node_modules
 /milestone1
+.DS_Store
+.vscode/
