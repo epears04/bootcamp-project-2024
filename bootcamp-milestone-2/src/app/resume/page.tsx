@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-5 bg-torq">
       <h1 className="text-2xl font-semibold text-gray-900 no-underline">
-      <a  href="./../../"
+      <a  href="http://localhost:3000/bootcamp-milestone-2/oct1Resume.pdf"
             download="ElliePearsonResume.pdf"
             target="_blank"
             className="hover:underline transition-colors duration-200">

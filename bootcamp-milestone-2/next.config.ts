@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  basePath: '/bootcamp-milestone-2',
+  trailingSlash: true,
 };
 
 export default nextConfig;
