@@ -1,0 +1,228 @@
+html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #192A30;
+  }
+  
+  body {
+    background-color: white;
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  main {
+    padding: 0 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* CSS for navigation bar */
+  
+  .navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 7%;
+    z-index: 10;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  
+    background-color: #3C6373;
+    color: white;
+    padding: 0px 0px;
+  
+    /* Debug border */
+    /* border: solid red; */
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 30px;
+    list-style: none;
+  }
+  
+  .navbar a {
+    color: #D9D7C5;
+    font-weight: bold;
+    margin: 0 12px;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+
+  .logo {
+    padding-left: 10px
+  }
+  
+  /* CSS for page footer */
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3C6373;
+    color: #D9D7C5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
+
+  /* General CSS */
+  #img-body {
+    background-image: url("/../resources/background.jpg"); 
+    background-size: cover;
+  }
+  
+
+  .page-body{
+    background-color: #86A6A6;
+  }
+
+
+  /* Contact CSS */
+  .form-box {
+    width: 30%;
+    height: 75%;
+    background-color:#D9D7C5;
+    box-shadow: 8px 8px 5px #243B45;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .contact-text{
+    text-align: center;
+  }
+  
+  .name-email {
+	display: flex;
+	gap: 10px;
+  }
+
+  .name-email input {
+    width: 50%; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    max-width: 100%; 
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  /* About CSS */
+
+  .about-container {
+    width: 90%;
+    background-color:#D9D7C5;
+    box-shadow: 8px 8px 5px #243B45;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+  }
+
+  .about-text {
+    flex: 1;
+    width: 100%;
+    padding-right: 100px;
+    font-size: 18px;
+    min-width: 200px;
+  }
+
+  .about-image img{
+    flex: 1;
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+  }
+
+  /* Resume CSS */
+
+  .resume-title a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .resume {
+    width: 90%;
+    height: auto;
+    background-color:#D9D7C5;
+    box-shadow: 8px 8px 5px #243B45;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 25px;
+  }
+
+  .entry h3 {
+    margin-bottom: 5px;
+  }
+  
+  .entry p {
+    margin-top: 0; 
+  }
+  
+  .entry ul {
+    margin-top: 0;
+  }
+
+  .section-title {
+    margin-bottom: 10px; 
+  }
+
+  .entry-title {
+    margin-top: 5px; 
+    margin-bottom: 10px; 
+  }
+
+
+  /* Portfolio CSS */
+  .project {
+    width: 90%;
+    height: auto;
+    background-color: #D9D7C5;
+    box-shadow: 8px 8px 5px #243B45;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .project-details img {
+    width: 100%;
+    max-width: 690px;
+    border-radius: 10px;
+    border: 5px solid #243B45;
+    box-shadow: 5px 5px 5px #243B45;
+  }
+
+  /* Blog CSS */
+
+  .blog-img {
+    max-width: 696px;
+  }
