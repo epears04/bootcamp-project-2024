@@ -8,7 +8,7 @@ export default function BlogPage() {
       <h1 className="p-2 text-2xl font-semibold text-gray-800">BLOG</h1>
       <p className="mb-8 text-lg text-gray-700">Welcome to my blog! Here are some of my latest posts:</p>
 
-      <div className="w-full max-w-3xl space-y-4">
+      <div className="w-full max-w-3xl pb-2 mb-5 space-y-4">
         {blogs.map((blog) => (
           <BlogPreview key={blog.slug} {...blog} />
         ))}

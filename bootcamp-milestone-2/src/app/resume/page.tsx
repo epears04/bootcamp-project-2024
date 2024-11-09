@@ -4,14 +4,14 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-5 bg-torq">
       <h1 className="text-2xl font-semibold text-gray-900 no-underline">
-      <a  href="http://localhost:3000/bootcamp-milestone-2/oct1Resume.pdf"
-            download="ElliePearsonResume.pdf"
-            target="_blank"
-            className="text-gray-800 transition-colors duration-200 hover:underline">
-            MY RESUME
-    </a>
+        <a  href="http://localhost:3000/bootcamp-milestone-2/oct1Resume.pdf"
+              download="ElliePearsonResume.pdf"
+              target="_blank"
+              className="text-gray-800 transition-colors duration-200 hover:underline">
+              MY RESUME
+        </a>
       </h1>
-      <div className="w-11/12 p-5 mt-6 rounded-lg shadow-lg bg-cream">
+      <div className="w-11/12 p-5 my-6 rounded-lg shadow-lg bg-cream">
         <section className="mb-6 section">
           <h2 className="mb-3 text-lg font-bold">Education</h2>
           <div className="mb-4">
