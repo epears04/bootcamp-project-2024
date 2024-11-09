@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         'regal-blue': '#243c5a',
         'cream': '#D9D7C5',
+        'light-cream': '#EBE9DF',
         'torq': '#86A6A6',
         'header-blue': '#3C6373',
         'darkest-blue': '#074259',

@@ -3,7 +3,7 @@ import React from "react";
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-start min-h-screen p-4 pb-0 bg-custom-image bg-torq">
-      <h1 className="text-2xl font-semibold">ABOUT ME</h1>
+      <h1 className="text-2xl font-semibold text-gray-800">ABOUT ME</h1>
       <div className="flex flex-row items-center justify-center w-11/12 p-3 m-4 rounded-lg shadow-lg bg-cream">
         <div className="flex-1 w-full p-1 m-2 text-lg min-w-52">
               <p>Hello! My name is Ellie, nice to meet you</p>

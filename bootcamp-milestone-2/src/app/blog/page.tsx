@@ -5,7 +5,7 @@ import blogs from "@/static/blogData";
 export default function BlogPage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-2 bg-torq">
-      <h1 className="p-2 text-2xl font-semibold">BLOG</h1>
+      <h1 className="p-2 text-2xl font-semibold text-gray-800">BLOG</h1>
       <p className="mb-8 text-lg text-gray-700">Welcome to my blog! Here are some of my latest posts:</p>
 
       <div className="w-full max-w-3xl space-y-4">

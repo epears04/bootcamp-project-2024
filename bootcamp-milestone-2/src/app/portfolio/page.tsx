@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex flex-col items-center min-h-screen bg-torq">
-        <h1 className="m-3 mb-0 text-2xl font-semibold ">PORTFOLIO</h1>
+        <h1 className="m-3 mb-0 text-2xl font-semibold text-gray-800">PORTFOLIO</h1>
             <div className="w-11/12 h-auto p-5 m-5 rounded-md shadow-lg bg-cream">
                 <div className="flex flex-col items-center">
                     <h2 className="text-lg font-semibold text-gray-800">Hack4Impact Personal Website</h2>
@@ -28,14 +28,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-/*
-  .project-details img {
-    width: 100%;
-    max-width: 690px;
-    border-radius: 10px;
-    border: 5px solid #243B45;
-    box-shadow: 5px 5px 5px #243B45;
-  }
-*/
