@@ -3,7 +3,6 @@ import { NextConfig } from 'next';
 const basePath = '/bootcamp-project-2024'; // adjust based on your deployment path
 
 const nextConfig: NextConfig = {
-  output: 'export',
   basePath,
   trailingSlash: true,
   images: {
