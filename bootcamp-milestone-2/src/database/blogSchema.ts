@@ -8,7 +8,7 @@ type Blog = {
 		description: string; // for preview
         content: string; // for individual blog page
 		image: string;
-		imageAlt: string;
+		image_alt: string;
 		//comments: IComment[]; // array for comments
 };
 
@@ -21,11 +21,10 @@ const blogSchema = new Schema<Blog>({
 		description: { type: String, required: true },
 		content: { type: String, required: false },
 		image: { type: String, required: false },
-		imageAlt: { type: String, required: false },
+		image_alt: { type: String, required: false },
 })
 
 // defining the collection and model
-const Blog = mongoose.models['blogs'] ||
-    mongoose.model('blogs', blogSchema);
+const Blog = mongoose.models['blogs'] || mongoose.model('blogs', blogSchema);
 
 export default Blog;

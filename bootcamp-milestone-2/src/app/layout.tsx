@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Ellie Pearson",
+  title: "Ellie's Website",
   description: "A personal website for Ellie Pearson",
 };
 

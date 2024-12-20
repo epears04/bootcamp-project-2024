@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import BlogPostLayout from "@/components/blogPostLayout";
 
-export default function BlogPage({ params }: { params: { slug: string } }) {
+export default function BlogPage({ params }: { params: Promise<{ slug: string }> }) {
   const [blog, setBlog] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -10,7 +10,8 @@ export default function BlogPage({ params }: { params: { slug: string } }) {
     // Fetch data from the API
     async function fetchBlog() {
       try {
-        const res = await fetch(`/bootcamp-project-2024/api/Blogs/${params.slug}`);
+        const { slug } = await params;
+        const res = await fetch(`/bootcamp-project-2024/api/blogs/${slug}`);
         if (!res.ok) {
           throw new Error("Blog not found");
         }
@@ -22,14 +23,14 @@ export default function BlogPage({ params }: { params: { slug: string } }) {
     }
 
     fetchBlog();
-  }, [params.slug]);
+  }, [params]);
 
   if (error) {
     return <p>{error}</p>;
   }
 
   if (!blog) {
-    return <p>No blog</p>
+    return <p>Loading blogs...</p>
   }
 
   return (
@@ -37,9 +38,10 @@ export default function BlogPage({ params }: { params: { slug: string } }) {
       title={blog.title}
       date={blog.date}
       image={blog.image}
-      imageAlt={blog.imageAlt}
+      image_alt={blog.imageAlt}
       description={blog.description}
       content={blog.content}
+      slug={blog.slug}
     />
   );
 }

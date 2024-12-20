@@ -1,23 +1,16 @@
-
 import { NextRequest, NextResponse } from "next/server";
-import blogSchema from "@database/blogSchema";
+import ProjectSchema from "@database/projectSchema";
 import connectDB from "@database/db";
 
-
-// type IParams = {
-//     params: {
-//         slug: string
-//     };
-// };
 
 export async function GET(req: NextRequest, context: { params: Promise<{ slug: string }> }) {
     await connectDB(); // function from db.ts before
     const { slug } = await context.params; // another destructure
 
     try {
-        const blog = await blogSchema.findOne({ slug }).orFail()
-        return NextResponse.json(blog)
+        const project = await ProjectSchema.findOne({ slug }).orFail()
+        return NextResponse.json(project)
     } catch (err) {
-        return NextResponse.json('Blog not found.', { status: 404 })
+        return NextResponse.json('Project not found.', { status: 404 })
     }
 }
