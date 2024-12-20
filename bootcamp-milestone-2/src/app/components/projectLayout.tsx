@@ -19,7 +19,7 @@ export default function ProjectLayout({
             <p className="m-1 text-gray-700">Posted on: {new Date(date).toLocaleDateString()}</p>
             <img src={image} alt={image_alt} className="max-w-3xl my-4 border-4 border-solid rounded-lg border-darkest-blue drop-shadow-lg" />
             <p className="text-lg font-bold text-gray-800">{description}</p>
-            <p className="text-lg text-gray-800">{content}</p>
+            <p className="py-2 mx-4 text-lg text-gray-800">{content}</p>
             <p className="text-base text-gray-600">Technologies used: {technologies.join(", ")}</p>
             <Link href={repo_link} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600">
                 Project Repo
