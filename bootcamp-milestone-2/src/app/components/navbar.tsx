@@ -3,17 +3,17 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 w-full z-10 bg-header-blue text-cream">
-      <nav className="container mx-auto flex justify-between items-center p-4">
+    <header className="sticky top-0 z-10 w-full bg-header-blue text-cream">
+      <nav className="container flex items-center justify-between p-4 mx-auto">
         <h1 className="text-lg font-bold trackig-wide">
           <Link href="/">Ellie Pearson</Link>
         </h1>
-        <div className="flex space-x-6 mr-8">
-          <Link href="/" className="text-cream font-semibold hover:underline">Home</Link>
-          <Link href="/blog" className="text-cream font-semibold hover:underline">Blog</Link>
-          <Link href="/portfolio" className="text-cream font-semibold hover:underline">Portfolio</Link>
-          <Link href="/resume" className="text-cream font-semibold hover:underline">Resume</Link>
-          <Link href="/contact" className="text-cream font-semibold hover:underline">Contact</Link>
+        <div className="flex mr-8 space-x-6">
+          <Link href="/" className="font-semibold text-cream hover:underline">Home</Link>
+          <Link href="/blog" className="font-semibold text-cream hover:underline">Blog</Link>
+          <Link href="/projects" className="font-semibold text-cream hover:underline">Portfolio</Link>
+          <Link href="/resume" className="font-semibold text-cream hover:underline">Resume</Link>
+          <Link href="/contact" className="font-semibold text-cream hover:underline">Contact</Link>
         </div>
       </nav>
     </header>

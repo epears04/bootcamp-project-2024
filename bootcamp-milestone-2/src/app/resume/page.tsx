@@ -7,7 +7,7 @@ export default function Home() {
         <a  href="http://localhost:3000/bootcamp-milestone-2/oct1Resume.pdf"
               download="ElliePearsonResume.pdf"
               target="_blank"
-              className="text-gray-800 transition-colors duration-200 hover:underline">
+              className="text-2xl text-gray-800 transition-colors duration-200 hover:underline">
               MY RESUME
         </a>
       </h1>

@@ -14,17 +14,17 @@ export default function ProjectLayout({
     repo_link,
 }: Project) {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-torq">
+        <div className="flex flex-col items-center justify-center min-h-screen p-4 text-center bg-torq">
             <h1 className="text-3xl font-bold text-gray-800">{title}</h1>
             <p className="m-1 text-gray-700">Posted on: {new Date(date).toLocaleDateString()}</p>
-            <img src={image} alt={image_alt} className="max-w-3xl my-4 rounded-lg" />
+            <img src={image} alt={image_alt} className="max-w-3xl my-4 border-4 border-solid rounded-lg border-darkest-blue drop-shadow-lg" />
             <p className="text-lg font-bold text-gray-800">{description}</p>
             <p className="text-lg text-gray-800">{content}</p>
-            <p className="text-base text-gray-600">{technologies.join(", ")}</p>
+            <p className="text-base text-gray-600">Technologies used: {technologies.join(", ")}</p>
             <Link href={repo_link} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600">
                 Project Repo
             </Link>
-            <Link href={live_link} target="_blank" rel="noopener norefferer" className="text-sm test-gray-600">
+            <Link href={live_link} target="_blank" rel="noopener norefferer" className="text-sm text-gray-600">
                 Project Link
             </Link>
         </div>
