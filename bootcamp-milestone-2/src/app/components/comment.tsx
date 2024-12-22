@@ -36,7 +36,7 @@ function parseCommentTime(time: Date){
 
 function Comment({ comment }: CommentProps) {
     return (
-        <div className="w-full p-4 border rounded-lg border-darkest-blue">
+        <div className="p-4 border-2 rounded-lg border-darkest-blue">
             <h4 className="text-lg font-semibold text-gray-800">{comment.user}</h4>
             <p className="text-gray-700">{comment.comment}</p>
             <span className="text-sm text-gray-600">{parseCommentTime(comment.time)}</span>

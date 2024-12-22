@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Project from "@database/projectSchema";
+import Comment from "@components/comment";
 
 export default function ProjectLayout({
     title,
@@ -12,6 +13,7 @@ export default function ProjectLayout({
     technologies, 
     live_link,
     repo_link,
+    comments,
 }: Project) {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-4 text-center bg-torq">
@@ -27,6 +29,18 @@ export default function ProjectLayout({
             <Link href={live_link} target="_blank" rel="noopener norefferer" className="text-sm text-gray-600">
                 Project Link
             </Link>
+            <h2 className="mt-8 text-xl font-bold text-gray-800">Comments</h2>
+            <div className="flex flex-col items-start justify-start">
+                {comments.length > 0 ? (
+                    <div className="w-full mt-4 space-y-5">
+                    {comments.map((comment, index) => (
+                        <Comment key={index} comment={comment} />
+                    ))}
+                    </div>
+                    ) : (
+                    <p className="mt-4 text-gray-600">No comments yet.</p>
+                )}
+            </div>
         </div>
     )
 }

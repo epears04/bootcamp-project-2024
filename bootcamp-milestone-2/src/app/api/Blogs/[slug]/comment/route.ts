@@ -6,9 +6,6 @@ export async function POST(req: NextRequest, { params }: { params: Promise<{ slu
     const { slug } = await params;
     const body = await req.json();
 
-    console.log("Blog slug:", slug);
-    console.log("Request body:", body); 
-
     const { user, comment, time } = body;
 
     if (!user || !comment || !time) {

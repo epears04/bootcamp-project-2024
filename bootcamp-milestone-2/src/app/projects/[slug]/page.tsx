@@ -45,6 +45,7 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
       technologies={project.technologies}
       live_link={project.live_link}
       repo_link={project.repo_link}
+      comments={project.comments}
     />
   );
 }

@@ -8,14 +8,14 @@ type IComment = {
 
 // typescript type (can also be an interface)
 type Blog = {
-		title: string;
-        slug: string; 
-		date: Date;
-		description: string; // for preview
-        content: string; // for individual blog page
-		image: string;
-		image_alt: string;
-		comments: IComment[]; // array for comments
+	title: string;
+	slug: string; 
+	date: Date;
+	description: string; // for preview
+	content: string; // for individual blog page
+	image: string;
+	image_alt: string;
+	comments: IComment[]; // array for comments
 };
 
 const commentSchema = new Schema<IComment>({
@@ -33,7 +33,7 @@ const blogSchema = new Schema<Blog>({
 		content: { type: String, required: false },
 		image: { type: String, required: false },
 		image_alt: { type: String, required: false },
-		comments: {type: [commentSchema], default: []},
+		comments: { type: [commentSchema], default: [] },
 });
 
 // defining the collection and model
