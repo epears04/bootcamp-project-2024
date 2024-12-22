@@ -30,7 +30,11 @@ export default function BlogPage({ params }: { params: Promise<{ slug: string }>
   }
 
   if (!blog) {
-    return <p>Loading blogs...</p>
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-torq">
+        <h1 className="text-3xl">Loading...</h1>
+      </div>
+    )
   }
 
   if(blog) {
