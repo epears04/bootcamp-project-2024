@@ -11,7 +11,7 @@ export default function BlogPage({ params }: { params: Promise<{ slug: string }>
     async function fetchBlog() {
       try {
         const { slug } = await params;
-        const res = await fetch(`/bootcamp-project-2024/api/blogs/${slug}`);
+        const res = await fetch(`/api/blogs/${slug}`);
         if (!res.ok) {
           throw new Error("Blog not found");
         }
@@ -32,7 +32,7 @@ export default function BlogPage({ params }: { params: Promise<{ slug: string }>
   if (!blog) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-torq">
-        <h1 className="text-3xl">Loading...</h1>
+        <h1 className="text-3xl">Loading Blog...</h1>
       </div>
     )
   }

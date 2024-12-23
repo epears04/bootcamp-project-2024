@@ -11,7 +11,7 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
     async function fetchProject() {
       try {
         const { slug } = await params;
-        const res = await fetch(`/bootcamp-project-2024/api/projects/${slug}`);
+        const res = await fetch(`/api/projects/${slug}`);
         if (!res.ok) {
           throw new Error("project not found");
         }
@@ -30,7 +30,11 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
   }
 
   if (!project) {
-    return <p>Loading projects...</p>
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-torq">
+        <h1 className="text-3xl">Loading Project...</h1>
+      </div>
+    )
   }
 
   return (
