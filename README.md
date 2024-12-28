@@ -1,3 +1,3 @@
-Hack4Impact Milestone 2
+Hack4Impact Bootcamp 2024
 <br></br>
-[View website here](https://epears04.github.io/bootcamp-project-2024/)
+[View website here](https://h4i-bootcamp-2024-psi.vercel.app/)
