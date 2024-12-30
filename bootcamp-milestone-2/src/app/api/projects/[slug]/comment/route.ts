@@ -2,8 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import connectDB from "@database/db";
 import Project from "@database/projectSchema";
 
-export async function POST(req: NextRequest, { params }: { params: { slug: string } }) {
-    const { slug } = await params;
+export async function POST(req: NextRequest) {
+    const url = new URL(req.url);
+    const slug = url.pathname.split("/").at(-3); //to get slug assuming /api/projects/[slug]/comment/
+    if (!slug) {
+        return NextResponse.json({ error: "Must include a slug" }, { status: 400 });
+    }
     const body = await req.json();
 
     const { user, comment, time } = body;
